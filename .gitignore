@@ -1,0 +1,5 @@
+# IntelliJ IDEA の設定ファイル
+.idea/
+
+# sbt で生成されるファイル
+target/
