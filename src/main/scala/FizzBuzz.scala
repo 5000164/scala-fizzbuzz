@@ -9,6 +9,8 @@ class FizzBuzz() {
       "fizz"
     } else if (i == 5) {
       "buzz"
+    } else if (i == 15) {
+      "fizzbuzz"
     } else {
       i.toString
     }
