@@ -5,6 +5,10 @@ object FizzBuzz {
 
 class FizzBuzz() {
   def fizzBuzz(i: Int): String = {
-    i.toString
+    if (i == 3) {
+      "fizz"
+    } else {
+      i.toString
+    }
   }
 }
