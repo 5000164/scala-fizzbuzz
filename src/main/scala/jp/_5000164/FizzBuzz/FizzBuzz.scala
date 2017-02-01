@@ -19,14 +19,11 @@ class FizzBuzz() {
 
 
   def calculateFizzBuzz(i: Int): String = {
-    if (i % 15 == 0) {
-      "fizzbuzz"
-    } else if (i % 3 == 0) {
-      "fizz"
-    } else if (i % 5 == 0) {
-      "buzz"
-    } else {
-      i.toString
+    i match {
+      case j if j % 15 == 0 => "fizzbuzz"
+      case j if j % 3 == 0 => "fizz"
+      case j if j % 5 == 0 => "buzz"
+      case j => j.toString
     }
   }
 }
