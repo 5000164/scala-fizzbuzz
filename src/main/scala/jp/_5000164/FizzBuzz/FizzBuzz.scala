@@ -1,3 +1,5 @@
+package jp._5000164.FizzBuzz
+
 object FizzBuzz {
   def main(args: Array[String]) {
   }

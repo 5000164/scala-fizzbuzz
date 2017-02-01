@@ -1,3 +1,6 @@
+package jp._5000164.FizzBuzz.unit
+
+import jp._5000164.FizzBuzz.FizzBuzz
 import org.scalatest.FreeSpec
 
 class FizzBuzzSpec extends FreeSpec {
