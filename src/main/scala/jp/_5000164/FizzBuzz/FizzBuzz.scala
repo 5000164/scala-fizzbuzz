@@ -6,6 +6,11 @@ object FizzBuzz {
 }
 
 class FizzBuzz() {
+  def fizzBuzz(limit: Int): String = {
+    ""
+  }
+
+
   def calculateFizzBuzz(i: Int): String = {
     if (i % 15 == 0) {
       "fizzbuzz"
