@@ -19,11 +19,12 @@ class FizzBuzz() {
 
 
   def calculateFizzBuzz(i: Int): String = {
-    i match {
-      case j if j % 15 == 0 => "fizzbuzz"
-      case j if j % 3 == 0 => "fizz"
-      case j if j % 5 == 0 => "buzz"
-      case j => j.toString
-    }
+    def f(j: Int, s: String) = { (k: Int) => if (k % j == 0) s else "" }
+
+    val fizz = f(3, "fizz")
+    val buzz = f(5, "buzz")
+    val fizzbuzz = fizz(i) + buzz(i)
+
+    if (fizzbuzz != "") fizzbuzz else i.toString
   }
 }
