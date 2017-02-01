@@ -7,12 +7,12 @@ object FizzBuzz {
 
 class FizzBuzz() {
   def calculateFizzBuzz(i: Int): String = {
-    if (i == 3) {
+    if (i == 15) {
+      "fizzbuzz"
+    } else if (i % 3 == 0) {
       "fizz"
     } else if (i == 5) {
       "buzz"
-    } else if (i == 15) {
-      "fizzbuzz"
     } else {
       i.toString
     }
