@@ -9,12 +9,9 @@ object FizzBuzz {
 
 class FizzBuzz() {
   def fizzBuzz(limit: Int): String = {
-    var fizzBuzz = ""
-    for (i <- 1 to limit) {
-      fizzBuzz += this.calculateFizzBuzz(i) + "\n"
-    }
+    require(limit > 1)
 
-    fizzBuzz
+    (1 to limit).toList.map(this.calculateFizzBuzz).mkString("", "\n", "\n")
   }
 
   def calculateFizzBuzz(i: Int): String = {
