@@ -1,7 +1,9 @@
 package jp._5000164.FizzBuzz
 
 object FizzBuzz {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
+    val fizzBuzz = new FizzBuzz
+    print(fizzBuzz.fizzBuzz(30))
   }
 }
 
