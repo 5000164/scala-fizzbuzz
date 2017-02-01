@@ -30,6 +30,14 @@ class FizzBuzzSpec extends FreeSpec {
       "6 を渡したら fizz が返される" in new Fixture {
         assert("fizz" == fizzBuzz.calculateFizzBuzz(6))
       }
+
+      "10 を渡したら buzz が返される" in new Fixture {
+        assert("buzz" == fizzBuzz.calculateFizzBuzz(10))
+      }
+
+      "30 を渡したら fizzbuzz が返される" in new Fixture {
+        assert("fizzbuzz" == fizzBuzz.calculateFizzBuzz(30))
+      }
     }
   }
 }
