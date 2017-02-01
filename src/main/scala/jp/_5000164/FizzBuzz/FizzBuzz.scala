@@ -7,7 +7,12 @@ object FizzBuzz {
 
 class FizzBuzz() {
   def fizzBuzz(limit: Int): String = {
-    ""
+    var fizzBuzz = ""
+    for (i <- 1 to limit) {
+      fizzBuzz += this.calculateFizzBuzz(i) + "\n"
+    }
+
+    fizzBuzz
   }
 
 
