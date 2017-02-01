@@ -4,7 +4,7 @@ object FizzBuzz {
 }
 
 class FizzBuzz() {
-  def fizzBuzz(i: Int): String = {
+  def calculateFizzBuzz(i: Int): String = {
     if (i == 3) {
       "fizz"
     } else if (i == 5) {

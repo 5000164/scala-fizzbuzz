@@ -7,25 +7,25 @@ class FizzBuzzSpec extends FreeSpec {
   }
 
   "FizzBuzz" - {
-    "fizzBuzz" - {
+    "calculateFizzBuzz" - {
       "1 を渡したら 1 が返される" in new Fixture {
-        assert("1" == fizzBuzz.fizzBuzz(1))
+        assert("1" == fizzBuzz.calculateFizzBuzz(1))
       }
 
       "3 を渡したら fizz が返される" in new Fixture {
-        assert("fizz" == fizzBuzz.fizzBuzz(3))
+        assert("fizz" == fizzBuzz.calculateFizzBuzz(3))
       }
 
       "5 を渡したら buzz が返される" in new Fixture {
-        assert("buzz" == fizzBuzz.fizzBuzz(5))
+        assert("buzz" == fizzBuzz.calculateFizzBuzz(5))
       }
 
       "15 を渡したら fizzbuzz が返される" in new Fixture {
-        assert("fizzbuzz" == fizzBuzz.fizzBuzz(15))
+        assert("fizzbuzz" == fizzBuzz.calculateFizzBuzz(15))
       }
 
       "6 を渡したら fizz が返される" in new Fixture {
-        assert("fizz" == fizzBuzz.fizzBuzz(6))
+        assert("fizz" == fizzBuzz.calculateFizzBuzz(6))
       }
     }
   }
