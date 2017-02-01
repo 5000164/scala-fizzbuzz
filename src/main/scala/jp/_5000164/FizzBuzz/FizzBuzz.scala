@@ -17,7 +17,6 @@ class FizzBuzz() {
     fizzBuzz
   }
 
-
   def calculateFizzBuzz(i: Int): String = {
     def f(j: Int, s: String) = { (k: Int) => if (k % j == 0) s else "" }
 
